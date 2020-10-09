@@ -91,27 +91,20 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Return an array that contains the even numbers from the nums array.
 */
 
+
 function evenFinder(nums){
-  for (let i = 0; i <= nums.length; i++){
+  let arr = []
+  for (i = 0; i < nums.length; i++){
     if(nums[i] % 2 === 0){
-      nums.push(nums[i])
+      arr.push(nums[i])
   }
 }
+return arr
 }
-
-
-
-
-
 
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
-
-
-
-
-
 
 
 ////////// PROBLEM 6 //////////
