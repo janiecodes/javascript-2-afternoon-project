@@ -121,11 +121,21 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 //Code Here
 function divider(numbersArray){
-  return 
+  evensArray = []
+  oddsArray = []
+  for(i = 0; i < numbersArray.length; i++){
+    if(numbersArray[i] % 2 === 0){
+      evensArray.push(numbersArray[i])
+    }
+    else{ 
+      oddsArray.push(numbersArray[i])
+    }
+  }
+  return [evensArray, oddsArray]
 }
 
-
 ////////// PROBLEM 7 //////////
+
 
 // Do not edit the code below.
 var getRandomArbitrary = function() {
@@ -144,7 +154,18 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
-
+function finder(array){
+  var randomNumber = getRandomArbitrary
+  //var found = false
+  for(let i = 0; i < array.length; i++){
+    if(array[i] === randomNumber()){
+     return true
+      // found = true
+    }
+  }
+  // return found
+  return false
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 
 ////////// PROBLEM 8 //////////

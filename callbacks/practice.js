@@ -158,14 +158,10 @@ uniq(names, function(uniqArr){
 
 //Code Here 
 function each(names, callback){
-  for (i=0; i < names.length; i++){
-    callback(names[names.length[i]])
-  }
-  return 
-}
-
-
-
+  names.forEach((name, index) => {
+    callback(name, index)
+  })
+} 
 
 
 // Do not edit the code below.
@@ -179,11 +175,20 @@ each(names, function(item, indice){
 ////////// PROBLEM 7 //////////
 
 /*
-  Write a function called getUserById that takes in three parameters: an array of objects (users), an id and a callback, and searches for the user with a matching id.
+  Write a function called getUserById that takes in three parameters: an array of objects (users), an id and a callback, 
+  and searches for the user with a matching id.
   When the correct user object is found, invoke the callback with the user object as an argument.
 */
 
 // Code here
+function getUserById(users, usersId, callback){
+  for(let i = 0; i < users.length; i++){
+    if(users[i].id === usersId) {
+      callback(users[i])
+    }
+  }
+
+}
 
 // Do not edit the code below.
 var users = [
